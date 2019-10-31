@@ -1,0 +1,13 @@
+v = normrnd(2,10,[1,10]); %se genereaza un vector cu elemente aleatoare
+                           % cu distributie normala folosind functia
+                           % existenta in matlab : normrnd
+
+n = length(v); %variabila n retine lungimea vectorului v
+
+for i = 1 : n
+    if v(i) < 0 % se verifica daca elementele sunt negative
+        v(i) % daca este indeplinita conditia din if, acestea se vor afisa
+             %in command window
+    end
+end
+

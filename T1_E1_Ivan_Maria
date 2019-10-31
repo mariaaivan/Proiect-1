@@ -1,0 +1,19 @@
+a = 0 : 0.1 : 2;
+
+n = length(a); %dimensiunea necesara vectorului b 
+                  %pentru a se putea efectua inmultirea
+                  
+ b = zeros(n,1);
+ 
+ for i = 1 : n
+     b(i) = 1;
+ end
+ 
+ c = a*b %se obtine un numar(vectorul a e de dim 1x21 si b de dim 21x1)
+ 
+ d = b*a % se obtine o matrice 21x21
+ 
+ e = a.*b' %pentru a realiza inmultirea pe componente
+             % este nevoie ca cei doi vectori sa aibe aceiasi dim
+               % de aceea se poate calcula transpusul vect b
+                % si se va realiza inmultirea pe componente cu vect a

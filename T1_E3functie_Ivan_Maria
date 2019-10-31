@@ -1,0 +1,30 @@
+function [medie,v,A] = functie(z)
+
+n = length(z); % variabila n retine lungimea vectorului z
+
+media = 0; % se initializeaza cu 0 var ce va calcula media
+
+for i = 1 : n
+    media = media + real(z(i)); % se calculeaza suma partilor reale
+                                % a numerelor din z
+end
+
+media = media/n; % se calculeaza media aritmetica
+
+v = zeros(n,1); % initializam cu 0 vectorul ce va retine
+               % patratele elem vectorului initial
+
+for  i = 1 : n
+    v(i) = z(i)^2; % atribuim fiecarui element din v
+                   %patratul elementului corspunzator din z
+end
+
+A = z*z'; %se calculeaza matricea obtinuta in urma inmultirii lui v
+          % cu transpusul sau
+%se afiseaza in command window media, vectorul v si matricea A
+media
+v
+A
+
+
+end

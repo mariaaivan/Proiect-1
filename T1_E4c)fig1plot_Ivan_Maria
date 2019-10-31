@@ -1,0 +1,11 @@
+n1 = -15 : 1 : 25;%se genereaza vect n1 cu val de la -15 la 20
+
+x1 = sin((pi/17) * n1);% se calculeaza x1
+
+n2 = 0 : 1 : 50;%se genereaza vect n2 cu val de la 0 la 50
+
+x2 = cos((pi/sqrt(23)) * n2);%se calculeaza x2
+%se reprezinta grafic dependentele cerute
+plot(n1,x1);
+hold on;
+plot(n2,x2);

@@ -1,0 +1,7 @@
+a = randi([1 10],10,1); %se genereaza un vector ce retine partea 
+                  % reala a numerelor complexe
+b = randi([1 10],10,1); %se genereaza un vector ce retine partea
+                 % imaginara a numerelor complexe
+z = complex(a,b); %se genereaza vectorul de numere complexe
+
+functie(z);

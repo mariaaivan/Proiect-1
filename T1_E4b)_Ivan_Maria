@@ -1,0 +1,6 @@
+n = 0 : 1 : 20;%se genereaza vectorul n cu val de la 0 la 20
+
+t = abs(10 - n);%se calculeaza functia a carei dependenta 
+                %se doreste a fi reprezentata
+
+stem(n,t);%se reprezinta grafic dependenta lui t de n
